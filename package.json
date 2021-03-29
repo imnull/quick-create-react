@@ -1,0 +1,37 @@
+{
+  "name": "quick-react",
+  "version": "1.0.0",
+  "description": "A react scaffold",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "rm -rf demo && node dist/index.js init demo -n test -d abc -k a,b,c -c",
+    "build": "babel src --delete-dir-on-start --env-name @babel/preset-env --ignore src/copy src/config -d dist",
+    "postbuild": "cp -R src/config src/copy dist",
+    "clean": "rm -rf demo"
+  },
+  "bin": {
+    "quick-react": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imnull/quick-react.git"
+  },
+  "keywords": [
+    "react",
+    "scaffold"
+  ],
+  "author": "imnull@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imnull/quick-react/issues"
+  },
+  "homepage": "https://github.com/imnull/quick-react#readme",
+  "dependencies": {
+    "commander": "^7.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/preset-env": "^7.13.12"
+  }
+}
