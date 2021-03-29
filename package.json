@@ -1,5 +1,5 @@
 {
-  "name": "quick-react",
+  "name": "quick-create-react",
   "version": "1.0.0",
   "description": "A react scaffold",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
     "clean": "rm -rf demo"
   },
   "bin": {
-    "quick-react": "dist/index.js"
+    "quick-create-react": "dist/index.js"
   },
   "repository": {
     "type": "git",
