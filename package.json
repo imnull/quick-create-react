@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "rm -rf demo && node dist/index.js init demo -n test -d abc -k a,b,c -c",
+    "doc": "node dist/index.js -h",
+    "doc2": "node dist/index.js help init",
     "build": "babel src --delete-dir-on-start --env-name @babel/preset-env --ignore src/copy src/config -d dist",
     "postbuild": "cp -R src/config src/copy dist",
     "clean": "rm -rf demo"
