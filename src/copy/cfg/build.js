@@ -14,7 +14,7 @@ const plugins = [
     new HtmlWebpackPlugin({ template: './src/index.html', inject: 'body', }),
 ]
 const resolve = {
-    extensions: ['.tsx', '.jsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
     alias: { },
 }
 const _module = {

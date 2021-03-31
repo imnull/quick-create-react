@@ -16,7 +16,7 @@ const plugins = [
 ]
 const devServer = { port: 9100, hot: true }
 const resolve = {
-    extensions: ['.tsx', '.jsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
     alias: { },
 }
 const _module = {

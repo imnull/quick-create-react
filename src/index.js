@@ -3,6 +3,7 @@ const { Command } = require('commander')
 const { isEmptyDir } = require('./utils/io')
 const genPackage = require('./gen-package')
 const genGitignore = require('./gen-gitignore')
+const genTSConfig = require('./gen-tsconfig')
 const { copy } = require('./utils/io')
 
 const exec = () => {
@@ -27,6 +28,8 @@ const exec = () => {
             genPackage.write(options)(path.join(dir, 'package.json'))
             // 写入 .gitignore
             genGitignore.write([])(path.join(dir, '.gitignore'))
+            // 写入 tsconfig.json
+            genTSConfig.write()(path.join(dir, 'tsconfig.json'))
             // 写入 webpack.config
             copy(path.resolve(__dirname, './copy'), dir)
         })

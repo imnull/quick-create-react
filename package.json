@@ -1,10 +1,10 @@
 {
   "name": "quick-create-react",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "A react scaffold",
   "main": "src/index.js",
   "scripts": {
-    "test": "rm -rf demo && node bin/quick-create-react.js init demo -n test -d abc -k a,b,c -c",
+    "test": "rm -rf demo && node dist/quick-create-react.js init demo -n test -d abc -k a,b,c -c",
     "doc": "node dist/index.js -h",
     "doc2": "node dist/index.js help init",
     "build": "babel src --delete-dir-on-start --env-name @babel/preset-env --ignore src/copy src/config -d dist",
